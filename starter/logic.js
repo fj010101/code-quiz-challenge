@@ -1,4 +1,5 @@
-const questions = [
+export const questions = [
+    
 // questions.js
 
     {
