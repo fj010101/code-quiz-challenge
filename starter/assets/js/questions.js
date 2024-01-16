@@ -12,7 +12,7 @@
     choices: ["+", "*", "&", "^"],
     correctIndex: 0,
 
-},
+}, 
 {
     question: "What is the purpose of the 'if' statement in JavaScript?",
     choices: ["Looping", "Conditionally execute code", "Defining a function", "Creating an array"],
@@ -20,7 +20,7 @@
 },
 {
     
-
+ 
     // End of questions.js
 }
 ];
