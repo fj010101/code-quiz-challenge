@@ -1,4 +1,4 @@
-// logic.js
+// logic js
 
 const questions = [
 
