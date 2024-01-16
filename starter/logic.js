@@ -59,8 +59,12 @@ let timer;
 let timeleft = 60;
 let score = 0;
 
+console.log('startButton:', startButton);
 startButton.addEventListener('click', startQuiz);
 submitButton.addEventListener('click', saveScore);
+function startQuiz() {
+    console.log("Start Quiz button clicked!");
+}
 
 function startQuiz() {
     startButton.style.display = 'none';
