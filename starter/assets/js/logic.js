@@ -60,3 +60,24 @@ function showQuestion() {
         endQuiz();
     }
 }
+
+function endQuiz() {
+    clearInterval(timer);
+    questionsContainer.classList.add('hide');
+    document.getElementById('end-screen').classList.remove('hide');
+    finalScoreContainer.textContent = score;
+
+}
+
+function updateTimer() {
+    timeContainer.textContent = timeleft;
+    if (timeleft <= 0) {
+        endQuiz();
+    } else {
+        timeleft--;
+    }
+}
+
+function saveScore() {
+    const initials = initialsInput.ariaValueMax;
+}
