@@ -19,7 +19,27 @@
     correctIndex: 1,
 },
 {
-    
+
+    question: "What function is used to print content to the console in JavaScript?",
+    choices: ["print()", "log()", "display()", "console()"],
+    correctIndex: 1,
+},
+        {
+    question: "Which symbol is used for single-line comments in JavaScript?",
+    choices: ["//", "/*", "#", "--"],
+    correctIndex: 0,
+},
+{
+
+    question: "What method is used to convert a string to an integer in JavaScript?",
+    choices: ["toInt()", "parse()", "convertToInt()", "parentInt()"],
+    correctIndex: 3,
+
+},
+        {
+    question: "In JavaScript, what type of data is 'true'?",
+    choices: ["Boolean", "String", "Number", "Object"],
+        },
  
     // End of questions.js
 }
