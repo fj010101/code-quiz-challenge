@@ -25,3 +25,17 @@ function startQuiz() {
     timer = setInterval(updateTimer, 1000);
     showQuestion();
 }
+
+function showQuestion() {
+    const currentQuestion = questions[currentQuestionIndex];
+    document.getElementById('question-title').textContent = currentQuestion.question;
+    choicesContainer.innerHTML = '';
+
+    currentQuestion.choices.forEach((choice, index) => {
+        const choiceButton = document.createElement('button');
+        choiceButton.textContent = choice;
+        choiceButton.addEventListener('click', () => checkAnswer(index));
+        choicesContainer.appendChild(choiceButton);
+    });
+    
+    }
