@@ -39,3 +39,24 @@ function showQuestion() {
     });
     
     }
+
+    function checkAnswer(index) {
+        const currentQuestion = questions[currentQuestionIndex];
+
+        if (index === currentQuestion.correctIndex) {
+            feedbackContainer.textContent = 'Correct!';
+            score += 10;
+        } else {
+            feedbackContainer.textContent = 'Incorrect! -10 seconds';
+            timeleft -= 10;
+        }
+
+        currentQuestionIndex++;
+
+        if (currentQuestionIndex < questions.length) {
+            showQuestion();
+    
+        } else {
+        endQuiz();
+    }
+}
