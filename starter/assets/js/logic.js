@@ -1,6 +1,8 @@
 // logic.js
 
-import questions from './questions.js';
+const questions = [
+
+];
 
 const startButton = document.getElementById('start');
 const questionsContainer = document.getElementById('questions');
