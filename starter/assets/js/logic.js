@@ -1,54 +1,7 @@
-export const questions = [
-    
-// questions.js
+let highScores = [];
 
-<<<<<<< HEAD
-    {
-        question: "What does 'JS' stand for?",
-        choices: ["Java Source", "JavaScript", "Just Saying", "Jungle Sound]"],
-        correctIndex: 1,
-    },
-    {
-        question: "Which operator is used for concatenation in JavaScript?",
-        choices: ["+", "*", "&", "^"],
-        correctIndex: 0,
-    
-    }, 
-    {
-        question: "What is the purpose of the 'if' statement in JavaScript?",
-        choices: ["Looping", "Conditionally execute code", "Defining a function", "Creating an array"],
-        correctIndex: 1,
-    },
-    {
-    
-        question: "What function is used to print content to the console in JavaScript?",
-        choices: ["print()", "log()", "display()", "console()"],
-        correctIndex: 1,
-    },
-            {
-        question: "Which symbol is used for single-line comments in JavaScript?",
-        choices: ["//", "/*", "#", "--"],
-        correctIndex: 0,
-    },
-    {
-    
-        question: "What method is used to convert a string to an integer in JavaScript?",
-        choices: ["toInt()", "parse()", "convertToInt()", "parentInt()"],
-        correctIndex: 3,
-    
-    },
-            {
-        question: "In JavaScript, what type of data is 'true'?",
-        choices: ["Boolean", "String", "Number", "Object"],
-            },
-     
-        // End of questions.js
-    
-    ];
-    
+// logic.js
 
-=======
->>>>>>> 8f619e967cb8969ef85e323ddcaac50cc30e7a46
 const startButton = document.getElementById('start');
 const questionsContainer = document.getElementById('questions');
 const choicesContainer = document.getElementById('choices');
@@ -65,12 +18,14 @@ let score = 0;
 
 console.log('startButton:', startButton);
 startButton.addEventListener('click', startQuiz);
-submitButton.addEventListener('click', saveScore);
-function startQuiz() {
-    console.log("Start Quiz button clicked!");
-}
+submitButton.addEventListener('click', function (event) {
+    event.preventDefault(); // prevent form submission
+    saveScore();
+});
 
 function startQuiz() {
+    console.log("Start Quiz button clicked!");
+
     startButton.style.display = 'none';
     questionsContainer.classList.remove('hide');
     timer = setInterval(updateTimer, 1000);
@@ -111,13 +66,20 @@ function showQuestion() {
         endQuiz();
     }
 }
-
 function endQuiz() {
     clearInterval(timer);
     questionsContainer.classList.add('hide');
     document.getElementById('end-screen').classList.remove('hide');
     finalScoreContainer.textContent = score;
 
+    // Store highScores in localStorage
+    localStorage.setItem('highScores', JSON.stringify(highScores));
+
+}
+
+const scoresContainer = document.getElementById('highscores-list');
+if (scoresContainer) {
+} else {
 }
 
 function updateTimer() {
@@ -129,6 +91,17 @@ function updateTimer() {
     }
 }
 
+
+// highscore.js
+
 function saveScore() {
-    const initials = initialsInput.ariaValueMax;
+    const initials = initialsInput.value;
+    console.log('User initials:', initials);
+
+    // Store the score in the highScores array
+    highScores.push({ initials, score });
+
+    // Redirect to highscores.html
+    window.location.href = 'highscores.html';
 }
+

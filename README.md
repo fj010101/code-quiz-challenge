@@ -1,88 +1,46 @@
-# Module 6 Challenge Web APIs: Code Quiz
+# Coding Quiz Challenge
 
-## Your Task
+## Description
 
-As you proceed in your journey to becoming a front-end web developer, it’s likely that you’ll be asked to complete a coding assessment, perhaps as part of an interview process. A typical coding assessment is a combination of multiple-choice questions and interactive coding challenges. 
+This project is a web-based coding quiz challenge that tests users on their knowledge of JavaScript fundamentals. The quiz includes multiple-choice questions, a timer, and a scoring system. Users can view their final score and submit their initials to save their high score.
 
-To help you become familiar with these tests and give you a chance to apply the skills from this module, this week’s challenge invites you to build a timed coding quiz with multiple-choice questions. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface. This week’s coursework has taught you all the skills you need to succeed in this challenge.
+## Table of Contents
 
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Contributing](#contributing)
+- [License](#license)
 
-## User Story
+## Installation
 
-```
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
+To run the coding quiz challenge locally, follow these steps:
 
-## Acceptance Criteria
+1. Clone the repository to your local machine:
 
-Create a code quiz that contains the following requirements:
+https://github.com/fj010101/code-quiz-challenge
 
-* A start button that when clicked a timer starts and the first question appears.
- 
-  * Questions contain buttons for each answer.
-  * 
-  * When answer is clicked, the next question appears
-  * 
-  * If the answer clicked was incorrect then subtract time from the clock
+Usage
 
-* The quiz should end when all questions are answered or the timer reaches 0.
+Click the "Start Quiz" button to begin the quiz.
+Answer the multiple-choice questions within the given time.
+If an answer is incorrect, time is deducted from the clock.
+After completing the quiz or when the timer reaches 0, view your final score.
+Enter your initials and click "Submit" to save your high score.
+You can view high scores by clicking the "View Highscores" link.
+Screenshots
 
-  * When the game ends, it should display their score and give the user the ability to save their initials and their score
-  
-## Mock-Up
+Include screenshots or gifs that showcase your project in action. For example, you can include screenshots of the quiz interface, the timer, and the high scores page.
 
-The following animation demonstrates the application functionality:
+Contributing
 
-![Animation of code quiz. Presses button to start quiz. Clicks the button for the answer to each question, displays if answer was correct or incorrect. Quiz finishes and displays high scores. User adds their intials, then clears their intials and starts over.](./assets/08-web-apis-challenge-demo.gif)
+If you'd like to contribute to the project, please follow these steps:
 
-## Grading Requirements
+Fork the repository.
+Create a new branch for your feature: git checkout -b feature-name.
+Commit your changes: git commit -m 'Add new feature'.
+Push to the branch: git push origin feature-name.
+Submit a pull request.
+License
 
-This challenge is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
----
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+This project is licensed under the MIT License.
