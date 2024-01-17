@@ -2,7 +2,6 @@ export const questions = [
     
 // questions.js
 
-<<<<<<< HEAD
     {
         question: "What does 'JS' stand for?",
         choices: ["Java Source", "JavaScript", "Just Saying", "Jungle Sound]"],
